@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://alexandregazagnes.github.io/awdible/contributing/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Contributing - Awdible</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Contributing";
+        var mkdocs_page_input_path = "contributing.md";
+        var mkdocs_page_url = "/awdible/contributing/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Awdible
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../usage/">Usage</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Contributing</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#local-development">Local development</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#setting-up-an-environment">Setting up an environment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#running-a-specific-test">Running a specific test</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#running-all-the-tests">Running all the tests</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#setting-up-pre-commit">Setting up pre-commit</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#using-zsh-to-auto-fetch">Using zsh to auto fetch</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#issues">Issues</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#reading-issues">Reading issues</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-new-issue">Creating a new issue</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#finding-the-good-issue-to-work-on">Finding the good issue to work on</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#contributing_1">Contributing</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-new-branch">Creating a new branch</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-pull-request">Creating a pull request</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../changelog/">Changelog</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../code_of_conduct/">Code of Conduct</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../security/">Security</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Awdible</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Contributing</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/AlexandreGazagnes/awdible/edit/master/docs/docs/contributing.md">Edit on AlexandreGazagnes/awdible</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="contributing">Contributing</h1>
+<h2 id="local-development">Local development</h2>
+<ul>
+<li>The complete test suite depends on having at least the following installed
+  (possibly not a complete list)</li>
+<li>git (Version 2.24.0 or above is required )</li>
+<li>
+<p>python3.10.x (Required by a test which checks different python versions)
+  <!-- - tox (or venv) --></p>
+</li>
+<li>
+<p>poetry, pip, pipenv, virtualenv, or similar</p>
+</li>
+<li>poetry is the preferred tool for managing dependencies, highly recommended</li>
+</ul>
+<h3 id="setting-up-an-environment">Setting up an environment</h3>
+<p>The project uses <a href="https://python-poetry.org/">Poetry</a> to manage its dependencies.
+Please install it using the following command :</p>
+<pre><code class="language-bash">pip install poetry
+</code></pre>
+<p>Then, please install the dependencies using the following command :</p>
+<pre><code class="language-bash">poetry install
+</code></pre>
+<p>Activate the environment using the following command :</p>
+<pre><code class="language-bash">poetry shell
+</code></pre>
+<p>And finally, install the pre-commit hooks using the following command :</p>
+<pre><code class="language-bash">pre-commit install
+</code></pre>
+<h3 id="running-a-specific-test">Running a specific test</h3>
+<p>Running a specific test with the environment activated is as easy as:
+<code>pytest tests -k test_the_name_of_your_test</code></p>
+<h3 id="running-all-the-tests">Running all the tests</h3>
+<p>With the environment activated you can run all of the tests
+using:
+<code>pytest tests</code></p>
+<h3 id="setting-up-pre-commit">Setting up pre-commit</h3>
+<p>We strongly recommend you to use <a href="https://pre-commit.com/">pre-commit</a> to manage your hooks.</p>
+<p>Here is the description of the tool from the official documentation :</p>
+<blockquote>
+<p>Git hook scripts are useful for identifying simple issues before submission to code review. We run our hooks on every commit to automatically point out issues in code such as missing semicolons, trailing whitespace, and debug statements. </p>
+<p>By pointing these issues out before code review, this allows a code reviewer to focus on the architecture of a change while not wasting time with trivial style nitpicks.</p>
+</blockquote>
+<p>Please install it using the following command :</p>
+<pre><code class="language-bash">pre-commit install
+</code></pre>
+<p><code>pre-commit</code> will now run on every commit. If you want to run it manually, you can use the following command :</p>
+<pre><code class="language-bash">pre-commit run --all-files
+</code></pre>
+<p><strong><code>pre-commit</code> is not mandatory but it is highly recommended.</strong> </p>
+<p>It is a great tool to ensure that your code is clean and that you are not introducing any new issues. </p>
+<p>It is also a great way to ensure that your code is compliant with the project's standards, and that your pull request will be accepted.</p>
+<h3 id="using-zsh-to-auto-fetch">Using zsh to auto fetch</h3>
+<p>If you are using <code>zsh</code> and <code>ohmyzsh</code>, you can install <code>git-auto-fetch</code> to automatically fetch the latest changes from the remote repository.</p>
+<p>Here an example of a <code>.zshrc</code> file with the plugin :</p>
+<pre><code class="language-shell">plugins=(git python git-auto-fetch git-prompt vscode)
+GIT_AUTO_FETCH_INTERVAL=1200 # in seconds
+source $ZSH/oh-my-zsh.sh
+</code></pre>
+<p>Find more information on the <a href="https://github.com/ohmyzsh/ohmyzsh/blob/master/plugins/git-auto-fetch/git-auto-fetch.plugin.zsh">official repository</a></p>
+<p>This is a great way to ensure that you are always working with the latest version of the code.</p>
+<p><strong>Like pre-commit, it is not mandatory but it is highly recommended.</strong></p>
+<h2 id="issues">Issues</h2>
+<h3 id="reading-issues">Reading issues</h3>
+<p>Please read the <a href="https://alexandregazagnes.github.io/awdible/issues/">issues page</a> before creating a new issue : 
+* Find a new issue to work on in the page. 
+* If you want to work on an issue, please comment on the issue to let others know that you are working on it.</p>
+<h3 id="creating-a-new-issue">Creating a new issue</h3>
+<p>Feel free to create a new issue if you have any question, suggestion, or if you want to report a bug : 
+* You will find a template to fill in when creating a new issue.
+* We have carefully crafted the template to help you provide the information we need to help you.
+* We will add relevant labels to your issue to help us keep track of it.</p>
+<h3 id="finding-the-good-issue-to-work-on">Finding the good issue to work on</h3>
+<ul>
+<li>Most important issues are tagged with the <code>good first issue</code> label</li>
+<li>Find relevant issues to work on by filtering the issues with the <code>good first issue</code>, <code>help wanted</code>, <code>urgent</code>, or <code>tricky</code> labels.</li>
+<li>When you find an issue you want to work on, please comment on the issue to let others know that you are working on it.</li>
+<li>You will have to make a comment to the issue in order to block it to other contributors.</li>
+</ul>
+<h2 id="contributing_1">Contributing</h2>
+<h3 id="creating-a-new-branch">Creating a new branch</h3>
+<p>⚠️ <strong>WARNING</strong> ⚠️ 
+* Read carefully the following instructions before creating a new branch.</p>
+<p>Find bellow the <strong>exact</strong> process to work on a feature : 
+* Any feature, bug fix, or improvement should come from an issue.
+* When you are ready to start working on an issue, <strong>please create a new branch directly from the issue page</strong>. You will find a button to create a new branch on the right side of the issue page.
+* Please <strong>choose <code>dev</code> as the base branch</strong> and not <code>main</code>. If not you will not be able to create a pull request.
+* You will not have to worry about the name of your branch : it will be automatically generated from the issue title : <strong>do not change it</strong>.
+* Once you have created the branch, you can start working on the issue.</p>
+<h3 id="creating-a-pull-request">Creating a pull request</h3>
+<p>⚠️ <strong>WARNING</strong> ⚠️ 
+* Read carefully the following instructions before creating a Pull Request.</p>
+<p>When you are ready to submit your work : 
+* Please create a pull request related to the issue you're working on
+* <strong>Refers to the issue</strong> in the pull request description : ie <a href="">#12</a>
+* Fill up the PR template and <strong>do not try to bypass the templat</strong>e
+* Please <strong>choose <code>dev</code> as the dest branch</strong> and not <code>main</code>. If not you will not be able to create a pull request.
+* We will review your pull request and give you feedback.</p>
+<p>After your pull request : 
+* A code review will be done by the maintainers.
+* Once your pull request is approved, we will merge it into the <code>dev</code> branch.
+* We will then close the issue and add the <code>merged</code> label to it.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../usage/" class="btn btn-neutral float-left" title="Usage"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../changelog/" class="btn btn-neutral float-right" title="Changelog">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/AlexandreGazagnes/awdible" class="fa fa-code-fork" style="color: #fcfcfc"> AlexandreGazagnes/awdible</a>
+        </span>
+    
+    
+      <span><a href="../usage/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../changelog/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

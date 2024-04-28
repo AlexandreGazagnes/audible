@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://alexandregazagnes.github.io/awdible/changelog/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Changelog - Awdible</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Changelog";
+        var mkdocs_page_input_path = "changelog.md";
+        var mkdocs_page_url = "/awdible/changelog/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Awdible
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../installation/">Installation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../usage/">Usage</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Changelog</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#as-a-reminder-please-notes-that-the-package-is-named-awdible-and-not-audible-anymore">As a reminder please notes that the package is named awdible AND NOT audible ANYMORE</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#please-note-that-the-s-option-requires-a-valid-youtube-rapid-api-key">Please note that the -s option requires a valid youtube rapid api key.</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2024-01-19-025-minor-ops-and-docs-updates-major-features-add-and-bug-fixes">2024-01-19 - 0.2.5 - Minor ops and docs updates + major features add and bug fixes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#updates">Updates</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#added">Added</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#to-do">To do</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2024-01-13-024-fix-ci-cd">2024-01-13 - 0.2.4 - Fix ci / cd</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#updates_1">Updates</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2024-01-12-023-fix-readme-and-docs">2024-01-12 - 0.2.3 - Fix readme and docs</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#updates_2">Updates</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#todo">Todo</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2024-01-11-020-2nd-release">2024-01-11 - 0.2.0 - 2nd release</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#updates_3">Updates</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#added_1">Added</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2024-01-11-012-fix-streamlit">2024-01-11 - 0.1.2 - Fix Streamlit</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#updates_4">Updates</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#todo_1">Todo</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2024-01-10-011-light-uiux-update">2024-01-10 - 0.1.1 - Light UI/UX update</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#updates_5">Updates</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2024-01-10-010-1st-release">2024-01-10 - 0.1.0 - 1st release</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#updates_6">Updates</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../code_of_conduct/">Code of Conduct</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../security/">Security</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Awdible</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Changelog</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/AlexandreGazagnes/awdible/edit/master/docs/docs/changelog.md">Edit on AlexandreGazagnes/awdible</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="changelog">Changelog</h1>
+<h4 id="as-a-reminder-please-notes-that-the-package-is-named-awdible-and-not-audible-anymore">As a reminder please notes that the package is named <code>awdible</code> AND NOT <code>audible</code> ANYMORE</h4>
+<h4 id="please-note-that-the-s-option-requires-a-valid-youtube-rapid-api-key">Please note that the <code>-s</code> option requires a valid <a href="https://rapidapi.com/herosAPI/api/youtube-data8">youtube rapid api key</a>.</h4>
+<p>More info in the documentation.</p>
+<h2 id="2024-01-19-025-minor-ops-and-docs-updates-major-features-add-and-bug-fixes">2024-01-19 - 0.2.5 - Minor ops and docs updates + major features add and bug fixes</h2>
+<h3 id="updates">Updates</h3>
+<ul>
+<li>Fix streamlit problem for <a href="https://github.com/AlexandreGazagnes/awdible/issues/14">#14</a></li>
+<li>Disable support for streamlit.io free web app</li>
+<li>Enable automation for the documentation index page update for <a href="https://github.com/AlexandreGazagnes/awdible/issues/19">#19</a></li>
+<li>Doc general update <a href="https://github.com/AlexandreGazagnes/awdible/issues/12">#12</a> <a href="https://github.com/AlexandreGazagnes/awdible/issues/19">#19</a> <a href="https://github.com/AlexandreGazagnes/awdible/issues/20">#20</a> <a href="https://github.com/AlexandreGazagnes/awdible/issues/33">#33</a></li>
+<li>Fix duplicate url, id or kewords problem <a href="https://github.com/AlexandreGazagnes/awdible/issues/36">#36</a></li>
+<li>Restrcuration of core app with Io and prequires modules</li>
+<li>Fix #55, #54, #53, #52 by removing ffmpeg-python and using subprocess with #69</li>
+<li>Add internet check #27 with #69</li>
+<li>Fake #10 and #7 : force unit tests to pass but do add placeholder for future tests with #69</li>
+<li>Major update of the documentation with #69</li>
+</ul>
+<h3 id="added">Added</h3>
+<ul>
+<li>Add support for rapid api youtube data8 in <code>README.md</code>, <code>index.md</code> and <code>usage.md</code> for <a href="https://github.com/AlexandreGazagnes/awdible/issues/12">#12</a></li>
+</ul>
+<h3 id="to-do">To do</h3>
+<ul>
+<li>Please have a look to the <a href="https://github.com/AlexandreGazagnes/awdible/issues">github issues page</a> and the <a href="https://github.com/users/AlexandreGazagnes/projects/3">github project page</a> for more info.</li>
+</ul>
+<h2 id="2024-01-13-024-fix-ci-cd">2024-01-13 - 0.2.4 - Fix ci / cd</h2>
+<h3 id="updates_1">Updates</h3>
+<ul>
+<li>Fix ci / cd</li>
+<li>Fix secrets for api keys</li>
+<li>fix and changes config call</li>
+<li>add doctring to all module / submodules</li>
+<li>delete useless files and code</li>
+</ul>
+<h2 id="2024-01-12-023-fix-readme-and-docs">2024-01-12 - 0.2.3 - Fix readme and docs</h2>
+<h3 id="updates_2">Updates</h3>
+<ul>
+<li>Fix readme and docs</li>
+</ul>
+<h3 id="todo">Todo</h3>
+<ul>
+<li>manage crop video</li>
+<li>fix dict error</li>
+<li>fix list random error</li>
+<li>clean files</li>
+<li>drop useless comments</li>
+<li>upgrade test policy</li>
+<li>use ruff</li>
+</ul>
+<h2 id="2024-01-11-020-2nd-release">2024-01-11 - 0.2.0 - 2nd release</h2>
+<h3 id="updates_3">Updates</h3>
+<ul>
+<li>rename awdible from audible</li>
+<li>reshape all app</li>
+<li>reshape Awdible class</li>
+</ul>
+<h3 id="added_1">Added</h3>
+<ul>
+<li>add true cli suport</li>
+<li>add tets</li>
+<li>add console</li>
+</ul>
+<h2 id="2024-01-11-012-fix-streamlit">2024-01-11 - 0.1.2 - Fix Streamlit</h2>
+<h3 id="updates_4">Updates</h3>
+<ul>
+<li>Fix streamlit problem</li>
+<li>Update readme</li>
+<li>Clean the repo</li>
+</ul>
+<h3 id="todo_1">Todo</h3>
+<ul>
+<li>Add better UI / UX front end, fancy and care instructions for the user</li>
+<li>Multi page app</li>
+<li>Front feature for cropping video in n parts</li>
+<li>Front feature for takin a keyword screen and not the video url</li>
+<li>Clean deps</li>
+<li>Add subtitles support feature</li>
+<li>Update test policy and add more tests</li>
+</ul>
+<h2 id="2024-01-10-011-light-uiux-update">2024-01-10 - 0.1.1 - Light UI/UX update</h2>
+<h3 id="updates_5">Updates</h3>
+<ul>
+<li>Added a more welcoming UI/UX</li>
+</ul>
+<h2 id="2024-01-10-010-1st-release">2024-01-10 - 0.1.0 - 1st release</h2>
+<h3 id="updates_6">Updates</h3>
+<ul>
+<li>First public version</li>
+<li>Core features such as input video, and download video</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../contributing/" class="btn btn-neutral float-left" title="Contributing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../code_of_conduct/" class="btn btn-neutral float-right" title="Code of Conduct">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/AlexandreGazagnes/awdible" class="fa fa-code-fork" style="color: #fcfcfc"> AlexandreGazagnes/awdible</a>
+        </span>
+    
+    
+      <span><a href="../contributing/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../code_of_conduct/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
